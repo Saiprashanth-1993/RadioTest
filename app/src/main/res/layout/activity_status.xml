@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_amb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/shapes"
+    tools:context="com.example.sai.designs.ListActivity">
+
+    <TextView
+        android:text="@string/ambient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tv1"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="@string/ambient_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:textColor="@color/white_overlay"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/tv1" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:stretchColumns="*"
+        android:layout_marginTop="30dp">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            >
+            <Button
+                android:layout_column="0"
+                android:id="@+id/custbtn"
+                android:text="@string/cust"
+                android:layout_height="70dp"
+                android:textColor="@color/white_overlay"
+                style="@style/custBtnPop"
+                />
+            <Button
+                android:layout_column="1"
+                android:id="@+id/okbtn"
+                android:layout_height="70dp"
+                android:text="@string/ok"
+                style="@style/custBtnPop"/>
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:src="@drawable/ambient"
+        android:id="@+id/imageView"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

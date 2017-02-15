@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RadioTest</string>
+    <string name="cust">Customize</string>
+    <string name="ok">OK</string>
+    <string name="ambient">Ambient Status</string>
+    <string name="ambient_text">Know what people are up to right now. Your music, battery, and location statuses are on.</string>
+    <string name="tone">Change Ringtone</string>
+    <string name="contacts">Contacts</string>
+</resources>
